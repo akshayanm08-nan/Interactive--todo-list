@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple interactive To-Do List app built with HTML, CSS, and JavaScript.">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body><main class="todo-container">
+    <header class="header">
+        <p class="subtitle">PLAN YOUR DAY</p>
+        <h1>My To-Do List ✨</h1>
+        <p class="description">
+            Small steps every day lead to big results.
+        </p>
+    </header>
+
+    <form id="task-form" class="task-form">
+        <label for="task-input" class="visually-hidden">
+            Enter a task
+        </label>
+
+        <input
+            type="text"
+            id="task-input"
+            placeholder="What do you need to do?"
+            maxlength="200"
+            autocomplete="off"
+            required
+        >
+
+        <button type="submit" id="add-button">
+            Add Task +
+        </button>
+    </form>
+
+    <section class="task-section">
+        <div class="task-heading">
+            <h2>Your Tasks</h2>
+            <span id="task-count">0 tasks left</span>
+        </div>
+
+        <ul id="task-list" aria-label="Your tasks"></ul>
+
+        <p id="empty-message">
+            No tasks yet. Add your first task! 🌱
+        </p>
+    </section>
+
+    <footer>
+        <p>Stay focused. You've got this! 💜</p>
+    </footer>
+</main>
+
+</body>
+</html>
